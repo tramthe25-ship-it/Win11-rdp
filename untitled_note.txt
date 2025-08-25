@@ -1,0 +1,3 @@
+Untitled Note
+
+qemu-system-x86_64 -m 3G -cpu host -enable-kvm -boot order=d -drive file=win11.iso,media=cdrom -drive file=win11.img,format=raw,if=virtio -drive file=virtio.iso,media=cdrom -device usb-ehci,id=usb,bus=pci.0,addr=0x4 -device usb-tablet -device rtl8139,netdev=n0 -vga qxl -vnc :0 \
